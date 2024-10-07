@@ -1,0 +1,51 @@
+:root {
+	--dark: #374151;
+    --dark1: #414958;
+	--darker: #1F2937;
+	--darkest: #192131;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+    --green: #38833b;
+}
+
+body{
+    background-image: linear-gradient(to right, #374151,  #192131);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--light);  
+    font-size: 3rem;
+}
+
+button {
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: var(--grey);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--darker);
+}

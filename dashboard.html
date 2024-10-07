@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task Management System</title>
+
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+        <header>
+        <div class="input-content" id="inputContent">
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="Add new task" />
+			<button id="new-task-btn">Add task</button>
+		</form>
+        <div class="btn-group">
+            <button class="btn-red" data-priority="High">High</button>
+            <button class="btn-yellow" data-priority="Medium">Medium</button>
+            <button class="btn-blue" data-priority="Low">Low</button>
+            <button class="btn-clr" onclick="resetForm()">CLear</button>
+          </div>
+        </div>
+    </header>
+	<main>
+        <h2>Tasks Dashboard</h2>
+		<section class="task-list">
+            <div class="container">
+            <div class="high-priority-task">TASK</div>
+                <button class="button-red">High</button>
+            </div>
+            <div class="task-container" id="high-priority-container">
+                <ul class="tasklist">
+                       <!-- <li></li> -->
+                </ul>
+            </div>
+        </div>
+            <div class="container">
+                <div class="medium-priority-task">TASK</div>
+                <button class="button-yellow">Medium</button>
+                </div>
+                <div class="task-container" id="medium-priority-container">
+                  <ul class="tasklist">
+                       <!-- <li></li> -->
+                  </ul>
+                </div>
+                <div class="container">
+                    <div class="low-priority-task">TASK</div>
+                    <button class="button-blue">Low</button>
+                  </div>
+                    <div class="task-container" id="low-priority-container">
+                      <ul class="tasklist">
+                          <!-- <li></li> -->
+                      </ul>
+                    </div>
+		</section>
+	</main>
+
+	<script src="index.js"></script>
+</body>
+</html>
